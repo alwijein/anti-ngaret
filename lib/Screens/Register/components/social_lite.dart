@@ -15,21 +15,24 @@ class SocialLite extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: press,
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 10),
-        padding: EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          border: Border.all(
-            width: 2,
-            color: kPrimartLightColor,
+      child: InkWell(
+        splashColor: Colors.amber,
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            border: Border.all(
+              width: 2,
+              color: kPrimartLightColor,
+            ),
+            shape: BoxShape.circle,
           ),
-          shape: BoxShape.circle,
-        ),
-        child: SvgPicture.asset(
-          iconSrc,
-          color: kPrimaryColor,
-          height: 20,
-          width: 20,
+          child: SvgPicture.asset(
+            iconSrc,
+            color: kPrimaryColor,
+            height: 20,
+            width: 20,
+          ),
         ),
       ),
     );

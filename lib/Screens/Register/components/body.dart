@@ -31,12 +31,21 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "DAFTAR",
-              press: () {},
+              press: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
             ),
             TidakPunyaAkunCheck(
               login: false,
               press: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) {
                     return LoginScreen();
@@ -50,11 +59,7 @@ class Body extends StatelessWidget {
               children: <Widget>[
                 SocialLite(
                   iconSrc: "assets/icons/facebook.svg",
-                  press: () {
-                    InkWell(
-                      splashColor: Colors.amber,
-                    );
-                  },
+                  press: () {},
                 ),
                 SocialLite(
                   iconSrc: "assets/icons/twitter.svg",

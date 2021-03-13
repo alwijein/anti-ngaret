@@ -5,7 +5,20 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title: Text(
+          "Kuliah Online",
+          style: TextStyle(color: Colors.black, fontFamily: "Harlow Solid"),
+        ),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.notifications,
+                color: Colors.grey,
+              ),
+              onPressed: () {}),
+        ],
       ),
     );
   }
