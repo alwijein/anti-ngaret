@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_x0x0x/Screens/Home/components/headline_text.dart';
 import 'package:latihan_x0x0x/Screens/Home/components/rounded_card_kelas.dart';
 import 'package:latihan_x0x0x/Screens/Home/home_screen.dart';
+import 'package:latihan_x0x0x/constants.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -50,32 +52,28 @@ class Body extends StatelessWidget {
               ),
             ],
           ),
+          HeadlineText(
+            kText: "Kuliah Hari Ini",
+            press: () {},
+          ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            margin: EdgeInsets.all(15),
+            height: size.height * 0.3,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
               children: [
-                Text(
-                  "Kelas Hari Ini",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17.0,
-                  ),
-                ),
-                Text(
-                  "see more",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 17.0,
-                  ),
-                ),
+                RoundedCardKelas(),
+                RoundedCardKelas(),
+                RoundedCardKelas(),
               ],
             ),
           ),
-          RoundedCardKelas()
+          HeadlineText(
+            kText: "Deadline Hari Ini",
+            press: () {},
+          )
         ],
       ),
     );
   }
 }
-

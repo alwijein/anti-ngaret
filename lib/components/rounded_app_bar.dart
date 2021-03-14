@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget{
+class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget {
   const RoundedAppBar({
     Key key,
   }) : super(key: key);
@@ -13,7 +13,8 @@ class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget{
       backgroundColor: Colors.white,
       title: Text(
         "Kuliah Online",
-        style: GoogleFonts.armata(textStyle: TextStyle(color: Colors.black))
+        style:
+            TextStyle(color: Colors.black, fontFamily: "Harlow", fontSize: 23),
       ),
       actions: [
         IconButton(
