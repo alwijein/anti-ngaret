@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_x0x0x/constants.dart';
+import 'package:latihan_x0x0x/Screens/Home/components/rounded_card_kelas.dart';
+import 'package:latihan_x0x0x/Screens/Home/home_screen.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class Body extends StatelessWidget {
     // membuat variable untuk mengambil layar hp
     Size size = MediaQuery.of(context).size;
     return Container(
-      child: Column(
+      child: ListView(
         children: [
           Row(
             children: [
@@ -19,9 +20,6 @@ class Body extends StatelessWidget {
                   height: size.height * 0.1,
                   width: size.height * 0.1,
                 ),
-              ),
-              SizedBox(
-                width: 10,
               ),
               Container(
                 margin: EdgeInsets.symmetric(vertical: 50),
@@ -61,20 +59,23 @@ class Body extends StatelessWidget {
                   "Kelas Hari Ini",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 14.0,
+                    fontSize: 17.0,
                   ),
                 ),
                 Text(
                   "see more",
                   style: TextStyle(
                     color: Colors.grey,
+                    fontSize: 17.0,
                   ),
-                )
+                ),
               ],
             ),
           ),
+          RoundedCardKelas()
         ],
       ),
     );
   }
 }
+
