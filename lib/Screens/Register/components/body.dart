@@ -21,7 +21,7 @@ class Body extends StatelessWidget {
           children: <Widget>[
             SvgPicture.asset(
               "assets/icons/signup.svg",
-              height: size.height * 0.4,
+              height: size.height * 0.3,
             ),
             RoundedInputField(
               hintText: "Masukkan Username",

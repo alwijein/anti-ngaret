@@ -13,7 +13,7 @@ class Body extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     // membuat variable size untuk ukuran layar
     Size size = MediaQuery.of(context).size;
@@ -52,7 +52,7 @@ class Body extends StatelessWidget {
             ),
             TidakPunyaAkunCheck(
               press: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) {
                     return RegisterScreen();

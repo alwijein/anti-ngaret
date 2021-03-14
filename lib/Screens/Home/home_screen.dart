@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_x0x0x/Screens/Home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -20,6 +21,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {}),
         ],
       ),
+      body: Body(),
     );
   }
 }
