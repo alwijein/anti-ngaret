@@ -57,7 +57,9 @@ class RoundedCardKelas extends StatelessWidget {
                         'RPL Berbasis Komponen',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      Text('Senin 13.00 - 14:40 (C3)'),
+                      Text('Senin 13.00 - 14:40 (C3)',style: TextStyle(
+                        fontSize: 13.0,
+                      ),),
                     ],
                   )
                 ],

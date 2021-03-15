@@ -8,24 +8,22 @@ class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: Text(
-          "Kuliah Online",
-          style: TextStyle(
-              color: Colors.black, fontFamily: "Harlow", fontSize: 25),
-        ),
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.notifications,
-                color: Colors.grey,
-              ),
-              onPressed: () {}),
-        ],
+    return AppBar(
+      elevation: 0,
+      backgroundColor: Colors.white,
+      title: Text(
+        "Kuliah Online",
+        style: TextStyle(
+            color: Colors.black, fontFamily: "Harlow", fontSize: 25),
       ),
+      actions: [
+        IconButton(
+            icon: Icon(
+              Icons.notifications,
+              color: Colors.grey,
+            ),
+            onPressed: () {}),
+      ],
     );
   }
 
