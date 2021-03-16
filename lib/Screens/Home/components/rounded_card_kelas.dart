@@ -11,9 +11,9 @@ class RoundedCardKelas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    final double cardWIdht = size.width * 0.5;
+    final double cardWidth = size.width * 0.5;
     return Container(
-      width: cardWIdht,
+      width: cardWidth,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         boxShadow: [
@@ -41,10 +41,10 @@ class RoundedCardKelas extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SvgPicture.asset("assets/icons/book_reading.svg",
-                      height: cardWIdht * 0.4),
+                      height: cardWidth * 0.4),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 10),
-                    width: cardWIdht,
+                    width: cardWidth,
                     decoration: BoxDecoration(
                       border: Border(
                         top: BorderSide(color: Colors.grey),
@@ -52,7 +52,7 @@ class RoundedCardKelas extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: cardWIdht,
+                    width: cardWidth,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

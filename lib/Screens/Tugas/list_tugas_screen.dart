@@ -5,6 +5,12 @@ import 'package:latihan_x0x0x/components/rounded_bottom_navigation_bar.dart';
 class ListTugas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        height: 50,
+        width: 50,
+        color: Colors.red,
+      ),
+    );
   }
 }

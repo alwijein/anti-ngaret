@@ -32,23 +32,27 @@ class _RoundedCardDeadlineState extends State<RoundedCardDeadline> {
                 //   left:
                 //       BorderSide(color: kPrimaryColor, width: size.width * 0.02),
                 // ),
-                borderRadius: BorderRadius.circular(15)),
+                borderRadius: BorderRadius.circular(10)),
           ),
           Container(
             // margin: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
-            margin: EdgeInsets.fromLTRB(30, 5, 15, 5),
+            margin: EdgeInsets.fromLTRB(28, 5, 15, 5),
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             height: size.height * 0.07,
             decoration: BoxDecoration(
               color: Colors.grey.shade200,
-              // border: Border(
-              //   left:
-              //       BorderSide(color: kPrimaryColor, width: size.width * 0.02),
-              // ),
               borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(15),
-                topRight: Radius.circular(15),
+                bottomRight: Radius.circular(10),
+                topRight: Radius.circular(10),
               ),
+              // boxShadow: [
+              //   BoxShadow(
+              //     color: Colors.grey.shade300,
+              //     offset: Offset.zero,
+              //     spreadRadius: 0,
+              //     blurRadius: 5,
+              //   )
+              // ],
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

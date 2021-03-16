@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:latihan_x0x0x/constants.dart';
 
 class RoundedBottomNavigationBar extends StatefulWidget {
+  int selectedIndex = 0;
   @override
   _RoundedBottomNavigationBarState createState() =>
       _RoundedBottomNavigationBarState();
@@ -9,11 +10,9 @@ class RoundedBottomNavigationBar extends StatefulWidget {
 
 class _RoundedBottomNavigationBarState
     extends State<RoundedBottomNavigationBar> {
-  int _selectedIndex = 0;
-
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index;
+      widget.selectedIndex = index;
     });
   }
 
@@ -43,7 +42,7 @@ class _RoundedBottomNavigationBarState
           title: SizedBox.shrink(),
         ),
       ],
-      currentIndex: _selectedIndex,
+      currentIndex: widget.selectedIndex,
       selectedItemColor: kPrimaryColor,
       onTap: _onItemTapped,
       elevation: 3.0,

@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:latihan_x0x0x/Screens/Home/home_screen.dart';
 import 'package:latihan_x0x0x/Screens/Login/components/background.dart';
 import 'package:latihan_x0x0x/Screens/Register/register_screen.dart';
+import 'package:latihan_x0x0x/Screens/state_controller.dart';
 import 'package:latihan_x0x0x/components/rounded_password_field.dart';
 import 'package:latihan_x0x0x/components/rounded_button.dart';
 import 'package:latihan_x0x0x/components/rounded_input_field.dart';
@@ -42,7 +43,7 @@ class Body extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return HomeScreen();
+                    return StateController();
                   }),
                 );
               },
