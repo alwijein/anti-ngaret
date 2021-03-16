@@ -11,7 +11,9 @@ class RoundedCardKelas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    final double cardWIdht = size.width * 0.5;
     return Container(
+      width: cardWIdht,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         boxShadow: [
@@ -39,28 +41,33 @@ class RoundedCardKelas extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SvgPicture.asset("assets/icons/book_reading.svg",
-                      height: size.height * 0.1),
-
-                  // divider sementara
-                  Divider(
-                    thickness: 1,
-                    color: kPrimaryColor,
-                  ),
-                  Divider(
-                    thickness: 1,
-                    color: kPrimaryColor,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'RPL Berbasis Komponen',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                      height: cardWIdht * 0.4),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 10),
+                    width: cardWIdht,
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.grey),
                       ),
-                      Text('Senin 13.00 - 14:40 (C3)',style: TextStyle(
-                        fontSize: 13.0,
-                      ),),
-                    ],
+                    ),
+                  ),
+                  Container(
+                    width: cardWIdht,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'RPL Berbasis Komponen',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Senin 13.00 - 14:40 (C3)',
+                          style: TextStyle(
+                            fontSize: 13.0,
+                          ),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
