@@ -13,8 +13,8 @@ class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.white,
       title: Text(
         "Kuliah Online",
-        style: TextStyle(
-            color: Colors.black, fontFamily: "Harlow", fontSize: 25),
+        style:
+            TextStyle(color: Colors.black, fontFamily: "Harlow", fontSize: 25),
       ),
       actions: [
         IconButton(
