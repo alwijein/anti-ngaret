@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.19.3
   google_fonts: ^2.0.0
+  rive: ^0.6.8
+  intl: ^0.17.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -50,6 +52,7 @@ flutter:
     - assets/images/
     - assets/images/users/
     - assets/icons/
+    - assets/animations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
