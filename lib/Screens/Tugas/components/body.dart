@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:latihan_x0x0x/constants.dart';
 import 'package:latihan_x0x0x/util/date_time_picker.dart';
+
 class Body extends StatefulWidget {
   @override
   _BodyState createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> {
-TextEditingController _dateController = new TextEditingController();
+  TextEditingController _dateController = new TextEditingController();
 
   DateTime selectedDate = DateTime.now();
   var myFormat = DateFormat('d-MM-yyyy');
 
-Future<void> _selectDate(BuildContext context) async {
+  Future<void> _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
         context: context,
         initialDate: selectedDate,
@@ -23,7 +24,7 @@ Future<void> _selectDate(BuildContext context) async {
       selectedDate = picked ?? selectedDate;
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -57,11 +58,14 @@ Future<void> _selectDate(BuildContext context) async {
                         Icons.date_range_outlined,
                         color: kPrimaryColor,
                       ),
-                      Text('Masukkan Tanggal',
-                      style: TextStyle(color: kPrimaryColor),),
+                      Text(
+                        'Masukkan Tanggal',
+                        style: TextStyle(color: kPrimaryColor),
+                      ),
                       Text(
                         '${myFormat.format(selectedDate)}',
-                      style: TextStyle(color: kPrimaryColor),),
+                        style: TextStyle(color: kPrimaryColor),
+                      ),
                     ],
                   ),
                 ),

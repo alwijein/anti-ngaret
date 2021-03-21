@@ -4,6 +4,7 @@ import 'package:latihan_x0x0x/Screens/Home/components/rounded_card_deadline.dart
 import 'package:latihan_x0x0x/Screens/Home/components/rounded_card_kelas.dart';
 import 'package:latihan_x0x0x/Screens/Home/components/user_profile.dart';
 import 'package:latihan_x0x0x/Screens/Home/home_screen.dart';
+import 'package:latihan_x0x0x/Screens/ListKuliah/list_kuliah_screen.dart';
 import 'package:latihan_x0x0x/constants.dart';
 
 class Body extends StatelessWidget {
@@ -17,7 +18,16 @@ class Body extends StatelessWidget {
           UserProfile(),
           HeadlineText(
             kText: "Kuliah Hari Ini",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ListKuliahScreen();
+                  },
+                ),
+              );
+            },
           ),
           Container(
             margin: EdgeInsets.all(15),
