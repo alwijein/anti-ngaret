@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:latihan_x0x0x/constants.dart';
-import 'package:latihan_x0x0x/util/date_time_picker.dart';
+
 
 class Body extends StatefulWidget {
   @override
@@ -27,7 +27,7 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;  
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       child: ListView(
